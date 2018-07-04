@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/start_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.sergeev.organizer.organizer.StartActivity"
+    android:background="@color/mainBackground"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вход в систему"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:hint="@string/login"
+        android:inputType="text"
+        android:layout_above="@+id/password"
+        android:background="@drawable/button"/>
+    <EditText
+        android:id="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:layout_above="@+id/save_data"
+        android:background="@drawable/button"/>
+    <CheckBox
+        android:id="@id/save_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Запомнить меня"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/save_data"
+        android:layout_marginTop="40dp">
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/login_button_text"
+        android:background="@drawable/click_button2"/>
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/create_account_button"
+        android:background="@drawable/click_button"/>
+    </LinearLayout>
+</RelativeLayout>

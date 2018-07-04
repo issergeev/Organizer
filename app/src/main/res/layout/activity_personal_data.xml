@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.sergeev.organizer.organizer.PersonalData"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Личные данные"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Имя"
+        android:background="@drawable/button"
+        android:layout_above="@+id/change_login"/>
+
+    <EditText
+        android:id="@id/change_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Логин"
+        android:background="@drawable/button"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberPassword"
+        android:hint="Пароль"
+        android:background="@drawable/button"
+        android:layout_below="@id/change_login"/>
+
+    <EditText
+        android:id="@+id/change_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="Новый пароль"
+        android:layout_below="@id/change_password"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить"
+        android:background="@drawable/click_button"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/bar_item_2"
+        android:title=""
+        android:icon="@android:drawable/ic_input_add"
+        sabd:showAsAction="always" />
+
+    <item
+        android:id="@+id/ber_item_1"
+        android:title=""
+        android:icon="@android:drawable/ic_dialog_info"
+        sabd:showAsAction="always"/>
+</menu>
